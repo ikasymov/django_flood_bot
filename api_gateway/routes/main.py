@@ -1,6 +1,6 @@
 from flask import jsonify
 
-from setup import app, rpc_object as rpc
+from api_gateway.setup import app, rpc_object as rpc
 
 @app.route('/', methods=['GET'])
 def main():
