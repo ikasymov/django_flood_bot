@@ -1,3 +1,0 @@
-DB_URIS:
-  "fucking_girls:Base": ${DB_URL}
-AMQP_URI: ${AMQP_URI}

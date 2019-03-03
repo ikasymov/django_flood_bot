@@ -1,7 +1,9 @@
-from flask import jsonify
+from flask import request
 
 from api_gateway.setup import app, rpc_object as rpc
 
-@app.route('/', methods=['GET'])
+
+@app.route('/', methods=['POST'])
 def main():
-    return jsonify(rpc.fucking_girls.get('name'))
+    rpc.main.handler_bot(request.get_json())
+    return ""
